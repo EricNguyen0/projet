@@ -1,0 +1,209 @@
+@font-face {
+    /* POUR TITRE */
+    font-family: 'Hanson-Bold';
+    src: url('../fonts/Hanson-Bold.otf') format('opentype');
+}
+@font-face {
+    /* POUR TEXTE */
+    font-family: 'Quickdude';
+    src: url('../fonts/Quickdude.otf') format('opentype');
+}
+
+/* LOGO NOM SITE NEX.DEV = Nguyen Experience */
+h1 {
+    font-family: 'Hanson-Bold', monospace;
+    font-size: clamp(2rem, 2vw, 2rem);
+    color: white;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+  }
+  
+  h1:hover {
+    background-color: white;
+    color: black;
+  }
+
+/* **************************************** */
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+    z-index: 1000; /* Ensure navbar is always on top */
+}
+
+/* ICON HAMBURGER */
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger input {
+    display: none;
+}
+
+.hamburger svg {
+    height: 3em;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+    transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+/* ********************************************************************** */
+
+/* MENU NAVIGATION HOME ABOUT CONTACT */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Quickdude', monospace;
+}
+
+/* ICONES NAVBAR */
+.navbar-links a .fa-icon {
+    margin-right: 0.5rem;
+}
+
+.navbar-links a {
+    position: relative;
+    color: grey;
+    text-decoration: none;
+}
+/* ANIMATION LETTRE DE GAUCHE A DROITE */
+.navbar-links a span {
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.navbar-links a span::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 2px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-links a:hover span {
+    color: white;
+}
+
+.navbar-links a:hover span::after {
+    width: 100%;
+}
+
+.navbar-links a span:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.navbar-links a span:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.navbar-links a span:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.navbar-links a span:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.navbar-links a span:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+.navbar-links a span:nth-child(6) {
+    transition-delay: 0.5s;
+}
+
+.navbar-links a span:nth-child(7) {
+    transition-delay: 0.6s;
+}
+
+.navbar-links a span:nth-child(8) {
+    transition-delay: 0.7s;
+}
+
+.navbar-links a span:nth-child(9) {
+    transition-delay: 0.8s;
+}
+
+.navbar-links a .fa-icon {
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-links a:hover .fa-icon {
+    color: #f1356d; /* Change this to your desired hover color */ 
+}
+/* ***************************************************************** */
+
+/* MEDIA QUERY POUR MOBILE */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; 
+        align-items: center;
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        background-color: #333; 
+        padding: 1rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+        z-index: 1000;
+    }
+
+    .navbar-links.open {
+        max-height: 500px;
+    }
+
+    .navbar-links li {
+        text-align: center;
+        margin: 2rem 0;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .navbar-links.open li {
+        opacity: 1;
+    }
+}
