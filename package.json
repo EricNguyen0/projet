@@ -19,7 +19,7 @@
     "@splinetool/loader": "^0.9.0",
     "@splinetool/react-spline": "^4.0.0"
   },
-  "homepage": "https://github.com/EricNguyen0/projet.git",
+"homepage": "https://EricNguyen0.github.io/projet",
 
   "devDependencies": {
     "@eslint/js": "^9.19.0",

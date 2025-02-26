@@ -11,12 +11,12 @@ const CardContainer = () => {
           <div className="content">
             <div className="back">
               <div className="back-content">
-                <img src="./images/TANK.png" alt="" style={{ width: '100%', height: '90%', objectFit: 'fill' }} />
+                <img src="./assets/images/TANK.png" alt="" style={{ width: '100%', height: '90%', objectFit: 'fill' }} />
               </div>
             </div>
             <div className="front">
               <div className="img">
-                <img src="./images/TANK.png" alt="" />
+                <img src="./assets/images/TANK.png" alt="" />
               </div>
               <div className="front-content">
                 <small className="badge">3D</small>
@@ -40,12 +40,12 @@ const CardContainer = () => {
           <div className="content">
             <div className="back">
               <div className="back-content">
-                <img src="./images/1.png" alt="" style={{ width: '100%', height: '90%', objectFit: 'fill' }} />
+                <img src="./assets/images/1.png" alt="" style={{ width: '100%', height: '90%', objectFit: 'fill' }} />
               </div>
             </div>
             <div className="front">
               <div className="img">
-                <img src="./images/2.png" alt="" />
+                <img src="./assets/images/2.png" alt="" />
               </div>
               <div className="front-content">
                 <small className="badge">Adobe Suite</small>
@@ -68,12 +68,12 @@ const CardContainer = () => {
           <div className="content">
             <div className="back">
               <div className="back-content">
-                <img src="./images/3.png" alt="" style={{ width: '100%', height: '90%', objectFit: 'fill' }} />
+                <img src="./assets/images/3.png" alt="" style={{ width: '100%', height: '90%', objectFit: 'fill' }} />
               </div>
             </div>
             <div className="front">
               <div className="img">
-                <img src="./images/hand.png" alt="" />
+                <img src="./assets/images/hand.png" alt="" />
               </div>
               <div className="front-content">
                 <small className="badge">After Effect</small>
@@ -96,12 +96,12 @@ const CardContainer = () => {
           <div className="content">
             <div className="back">
               <div className="back-content">
-                <img src="./images/4.png" alt="" style={{ width: '100%', height: '90%', objectFit: 'fill' }} />
+                <img src="./assets/images/4.png" alt="" style={{ width: '100%', height: '90%', objectFit: 'fill' }} />
               </div>
             </div>
             <div className="front">
               <div className="img">
-                <img src="./images/4.png" alt="" />
+                <img src="./assets/images/4.png" alt="" />
               </div>
               <div className="front-content">
                 <small className="badge">Illustrator</small>
@@ -124,12 +124,12 @@ const CardContainer = () => {
           <div className="content">
             <div className="back">
               <div className="back-content">
-                <img src="./images/5.png" alt="" style={{ width: '100%', height: '90%', objectFit: 'fill' }} />
+                <img src="./assets/images/5.png" alt="" style={{ width: '100%', height: '90%', objectFit: 'fill' }} />
               </div>
             </div>
             <div className="front">
               <div className="img">
-                <img src="./images/5.png" alt="" />
+                <img src="./assets/images/5.png" alt="" />
               </div>
               <div className="front-content">
                 <small className="badge">3D</small>
